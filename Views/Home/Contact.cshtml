@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Base styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8b909b;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .home-button {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .home-button a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #071c34;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .contact-info-item {
+      background: #071c34;
+      color: #fff;
+      flex: 1;
+      padding: 30px 20px;
+      border-radius: 8px;
+    }
+    .contact-info-icon i {
+      font-size: 48px;
+      color: green;
+      margin-bottom: 15px;
+    }
+    .contact-info-text h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+    .contact-info-text span {
+      display: block;
+      font-size: 16px;
+      color: #999999;
+    }
+    .contact-page-form {
+      margin-top: 30px;
+    }
+    .contact-page-form h2 {
+      color: #071c34;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .contact-page-form form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .contact-page-form input,
+    .contact-page-form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: #f9f9f9;
+      border: 1px solid #f9f9f9;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-bottom: 15px; /* Increased margin for spacing */
+    }
+    .contact-page-form .single-input-field {
+      width: 40%;
+      margin: 15px;
+    }
+    .contact-page-form .message-input {
+      width: 95%;
+      margin-left: 15px;
+
+    }
+    .single-input-fieldsbtn input[type="submit"] {
+      background: green;
+      color: #fff;
+      padding: 10px 0;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      width: 150px;
+      margin-left: 15px;
+    }
+    .single-input-fieldsbtn input[type="submit"]:hover {
+      background: #071c34;
+    }
+    .contact-page-map iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    @@media (max-width: 400px) {
+    .contact-info-text h2 {
+        font-size: 16px;
+    }
+    .contact-info-text span {
+        font-size: 14px;
+    }
+    .single-input-fieldsbtn input[type="submit"] {
+        width: 100%;
+    }
+    .home-button a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    @@media (max-width: 576px) {
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info-icon i {
+        font-size: 36px;
+    }
+    .contact-page-form h2 {
+        font-size: 18px;
+    }
+}
+
+     @@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact-info-item {
+        margin-bottom: 20px;
+    }
+    .contact-page-form form {
+        flex-direction: column;
+    }
+    .contact-page-form .single-input-field,
+    .contact-page-form .message-input {
+        width: 100%;
+    }
+}
+
+   @@media (max-width: 1024px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+<section class="contact-page-sec">
+  <div class="container">
+    
+    <!-- Home Button -->
+    <div class="home-button">
+      <a asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a>
+    </div>
+    
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+      <!-- Address Section -->
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="contact-info-text">
+          <h2>Address</h2>
+          <span>1111 Cambridge Woods</span>
+          <span>Tampa, Fl</span>
+        </div>
+      </div>
+      
+      <!-- Email Section -->
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-info-text">
+          <h2>Email</h2>
+          <span>info@usf.com</span>
+          <span>yourmail@gmail.com</span>
+        </div>
+      </div>
+
+      <!-- Office Time Section -->
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="contact-info-text">
+          <h2>Office Time</h2>
+          <span>Mon - Thu: 9:00 am - 4:00 pm</span>
+          <span>Fri - Sun: 10:00 am - 5:00 pm</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-page-form">
+      <h2>Get in Touch</h2>
+      <form action="contact-mail.php" method="post">
+        <div class="single-input-field">
+          <input type="text" placeholder="Your Name" name="name" required />
+        </div>
+        <div class="single-input-field">
+          <input type="email" placeholder="E-mail" name="email" required />
+        </div>
+        <div class="single-input-field">
+          <input type="text" placeholder="Phone Number" name="phone" />
+        </div>
+        <div class="single-input-field">
+          <input type="text" placeholder="Subject" name="subject" />
+        </div>
+        <div class="message-input">
+          <textarea placeholder="Write Your Message" name="message" required></textarea>
+        </div>
+        <div class="single-input-fieldsbtn">
+          <input type="submit" value="Send Now" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Full-Width Map Section -->
+    <div class="contact-page-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3528.678768207343!2d-82.4584440845196!3d27.950575582701557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c4b15d1b9445%3A0x4896b7a7e96c5d8!2sTampa%2C%20FL%2C%20USA!5e0!3m2!1sen!2sus!4v1699989638412!5m2!1sen!2sus" allowfullscreen></iframe>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
