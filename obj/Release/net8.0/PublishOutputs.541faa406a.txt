@@ -1,0 +1,7 @@
+/Users/bsanthoshini/Desktop/DIS_MVC/LibraryManagementSystem/bin/Release/net8.0/publish/LibraryManagementSystem
+/Users/bsanthoshini/Desktop/DIS_MVC/LibraryManagementSystem/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/bsanthoshini/Desktop/DIS_MVC/LibraryManagementSystem/bin/Release/net8.0/publish/appsettings.json
+/Users/bsanthoshini/Desktop/DIS_MVC/LibraryManagementSystem/bin/Release/net8.0/publish/LibraryManagementSystem.dll
+/Users/bsanthoshini/Desktop/DIS_MVC/LibraryManagementSystem/bin/Release/net8.0/publish/LibraryManagementSystem.deps.json
+/Users/bsanthoshini/Desktop/DIS_MVC/LibraryManagementSystem/bin/Release/net8.0/publish/LibraryManagementSystem.runtimeconfig.json
+/Users/bsanthoshini/Desktop/DIS_MVC/LibraryManagementSystem/bin/Release/net8.0/publish/LibraryManagementSystem.pdb
